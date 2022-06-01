@@ -1,0 +1,128 @@
+body{
+ color: white;
+ background-color: #181719;
+}
+header{
+ width: 90%;
+ margin: 0 auto;
+ margin-top: 30px;
+ font-size: 14px;
+ transition: opacity 400ms;
+}
+#brand{
+ border: solid white 1px;
+ padding: 5px;
+ padding-top: 7px;
+}
+
+ a{
+ color: white;
+}
+nav a{
+ margin-left: 30px;
+ padding: 10px;
+ transition: 300ms;
+}
+a:hover{
+ color: white;
+ transform: scale(1.3);
+}
+#hamburger-icon{
+ display: none;
+ cursor: pointer;
+}
+.bar{
+ width: 35px;
+ height: 2px;
+ background-color: white;
+ margin: 6px 0;
+}
+img {
+ width: 100%;
+}
+ul{
+ margin-top: 20vh;
+ list-style: none;
+ padding: 0;
+}
+ul li{
+ padding: 20px;
+}
+#mobile-menu{
+ margin-top: 30px;
+ transform: translate(-2000px);
+ transition: transform 400ms;
+ position: absolute;
+ background-color: #181719;
+ height: 100vh;
+ z-index: 20;
+ top: 0;
+ left: 0;
+ right: 0;
+}
+#close-btn{
+ width: 93%;
+ margin: 0 auto;
+ cursor: pointer;
+}
+
+main{
+ width: 90%;
+ margin: auto;
+ margin-top: 50px;
+}
+section:first-child{
+ flex-basis: 33%;
+}
+section:last-child{
+ flex-basis: 60%;
+ position: relative;
+}
+section img{
+ height: 350px;
+}
+#card{
+ position: absolute;
+ background-color: #181719;
+ padding: 10px 20px 10px 20px;
+ bottom: -20%;
+ right: 3%;
+}
+#card p{
+ font-size: 13px;
+}
+#card h5{
+ width: 70%;
+}
+#card img{
+ height: 40px;
+ width: 40px;
+}
+#tag{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ color: #A9A9A9;
+ left: 0;
+}
+@media (max-width: 700px){
+ main, header{
+  width: 93%;
+ }
+#navbar{
+  display: none !important;
+ }
+ #hamburger-icon{
+  display: block;
+ }
+ main{
+  margin-bottom: 100px;
+ }
+
+ section:last-child{
+  margin-top: 30px;
+ }
+  #tag{
+   position: relative;
+  }
+}

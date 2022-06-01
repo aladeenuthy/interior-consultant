@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+		type='text/css'>
+	<script src="https://kit.fontawesome.com/7c9636cf8c.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="images/devchallenges.png">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="index.css">
+	<title>Interior consultant</title>
+</head>
+<body>
+	<header class="d-flex justify-content-between align-items-center">
+		<div id="brand">
+			THIS INTERIOR
+		</div>
+		<nav id="navbar">
+			<a href="">Home</a>
+			<a href="">Collection</a>
+			<a href="">About</a>
+			<a href="">Contact</a>
+		</nav>
+		<div id="hamburger-icon">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+	</header>
+	<div id="mobile-menu" >
+		<div id="close-btn" class="text-right"><i class="fa fa-xmark fa-2x"></i></div>
+		<ul class="d-flex flex-column align-items-center">
+			<li><a href="">Home</a></li>
+			<li><a href="">Collection</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</div>
+	<main class="d-md-flex justify-content-between align-items-center">
+		<section>
+			<h3 class="font-weight-bold mb-3">Modern Interior</h3>
+			<p>A full-Service residential & commercial interior design and staging company offerring professional organizing & eco-services.</p>
+			<div>
+				Read more
+			</div>
+		</section>
+		<section class="border ">
+			<div id="card" class="rounded">
+				<div class="d-flex">
+					<!--profile-->
+					<img src="images/photo2.png" alt="" class="rounded-circle mr-2">
+					<p>Alizer Webber <br>
+						<span class="text-muted">interior designer</span>
+					</p> 
+				</div>
+				<h5>Designed in 2020 by Alizer Webber</h5>
+			</div>
+
+			<img src="images/photo1.png" alt="">
+			
+		</section>
+	</main>
+	<p class="text-center" id="tag">created by aladeenthy - devchallenges.io</p>
+	<script >
+			let hamburgerIcon = document.getElementById("hamburger-icon");
+			let mobileMenu = document.getElementById("mobile-menu");
+			let closeButton = document.getElementById("close-btn");
+			hamburgerIcon.addEventListener('click', function () {
+				mobileMenu.style.transform = 'translate(0px)';
+			})
+
+			closeButton.addEventListener('click', function () {
+				mobileMenu.style.transform = 'translate(-2000px)'
+			})
+	</script>
+</body>
+</html>
